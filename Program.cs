@@ -5,7 +5,7 @@ Console.Write("Введите количество элементов масси
 int arrayNum = Convert.ToInt32(Console.ReadLine());
 
 string [] arrayString = new string [arrayNum];
-void array(string [] arrayString)
+void inputArray(string [] arrayString)
 {
     for (int i = 0; i < arrayString.Length; i++ )
     {
@@ -14,7 +14,7 @@ void array(string [] arrayString)
     }
 }
 
-string [] item(string [] stringArray)
+string [] filterArray(string [] stringArray)
 {
     int num = 0;
     for (int i = 0; i <arrayString.Length; i++)
@@ -35,7 +35,7 @@ string [] item(string [] stringArray)
     }
   return rezult;
 }
-void printA(string [] arrayString)
+void printArray(string [] arrayString)
 {
     Console.Write("[");
     for (int i = 0; i<arrayString.Length; i++)
@@ -44,5 +44,5 @@ void printA(string [] arrayString)
     }
     Console.Write("]");
 }
-array(arrayString);
-printA(item(arrayString));
+inputArray(arrayString);
+printArray(filterArray(arrayString));
